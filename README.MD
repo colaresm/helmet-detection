@@ -80,10 +80,10 @@ python test.py  video path_your_video
 ```
 
 <p align="center">
-  <img src="media/sample_1.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
-  <img src="media/sample_2.png" width="200" height="200" style="object-fit: cover; margin: 5px;"><br>
-  <img src="media/sample_3.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
-  <img src="media/sample_4.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
+  <img src="media/sample_1.png" width="400" height="400" style="object-fit: cover; margin: 5px;">
+  <img src="media/sample_2.png" width="400" height="400" style="object-fit: cover; margin: 5px;"><br>
+  <img src="media/sample_3.png" width="400" height="400" style="object-fit: cover; margin: 5px;">
+  <img src="media/sample_4.png" width="400" height="400" style="object-fit: cover; margin: 5px;">
 </p>
 
 ## Contributing
