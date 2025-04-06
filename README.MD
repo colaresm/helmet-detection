@@ -5,6 +5,7 @@ With this in mind, I developed this project with the goal of detecting helmet us
 
 # Fine-Tuning YOLO 
 Training YOLOv8n is quite straightforward, as the API is transparent. However, it still requires a dataset specifically focused on helmet detection.
+
 ![helmets](media/BikesHelmets41.png)
 
 In this project, I used the [Helmet Detection dataset](https://www.kaggle.com/datasets/andrewmvd/helmet-detection) available on Kaggle. Although it doesn't fully match my objective — as it includes various types of helmets, including those worn by motorcyclists
@@ -15,7 +16,7 @@ In this project, I used the [Helmet Detection dataset](https://www.kaggle.com/da
 - Image Format: PNG, with varying resolutions
 - Annotations: Provided in XML format following the PASCAL VOC standard
 
-All the steps performed during training are available in the ``train.py file``.
+All the steps performed during training are available in the ``train.py`` file.
  
 #  🚀 Get started
 Clone the repository
@@ -77,6 +78,13 @@ To detect helmets in videos the following command must be used:
 ```
 python test.py  video path_your_video
 ```
+
+<p align="center">
+  <img src="media/sample_1.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
+  <img src="media/sample_2.png" width="200" height="200" style="object-fit: cover; margin: 5px;"><br>
+  <img src="media/sample_3.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
+  <img src="media/sample_4.png" width="200" height="200" style="object-fit: cover; margin: 5px;">
+</p>
 
 ## Contributing
 

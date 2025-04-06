@@ -5,3 +5,4 @@ from scripts.visualize_bounding_boxes import visualize_bounding_boxes
 from scripts.run_helmet_detection_from_video import run_helmet_detection_from_video
 from scripts.run_helmet_detection_from_image import run_helmet_detection_from_image
 
+

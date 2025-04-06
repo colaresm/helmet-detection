@@ -14,5 +14,6 @@ val_labels_path = os.path.join(dataset_path, "val", "labels")
 test_img_path = os.path.join(dataset_path, "test", "images")
 
 model_path = "models/yolov8n_helmet_detection.pt"
+base_model_path = "models/yolov8n.pt"
 config_file_path = f"{dataset_path}/config.yaml"
 
