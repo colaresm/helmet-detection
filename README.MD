@@ -12,7 +12,6 @@ Initially, YOLOv8n is used to detect people (to differentiate a bicycle from a c
 Training YOLOv8n is quite straightforward, as the API is transparent. However, it still requires a dataset specifically focused on helmet detection.
 <p align="center">
   <img src="media/BikesHelmets41.png" width="400" height="300" style="object-fit: cover; margin: 5px;">
-  <img src="media/BikesHelmets128.png" width="400" height="300" style="object-fit: cover; margin: 5px;">
 </p>
 
 
