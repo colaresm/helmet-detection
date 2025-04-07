@@ -10,6 +10,3 @@ def get_label(in_motorcycle,in_bike,has_helmet):
     
     if  in_motorcycle  and not has_helmet:
         return  "Motorcyclist without helmet"
-
-    else:
-        return "Unknown"

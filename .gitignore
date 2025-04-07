@@ -1,6 +1,5 @@
-*scripts/__pycache__
-data/annotations*
-data/images*
+data/annotations/
+data/images/
 val/
 labels/
 train/
