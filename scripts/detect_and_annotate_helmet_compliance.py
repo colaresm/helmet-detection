@@ -35,8 +35,13 @@ def detect_and_annotate_helmet_compliance(source,persons,bicycles,motorcycles,im
             label = get_label(in_motorcycle,in_bike,has_helmet)
 
             x1, y1, x2, y2 = map(int, boxes_helmet_model[i])
-            cv2.rectangle(image, (x1, y1), (x2, y2), (255, 0, 255), 2)
+            cv2.rectangle(image, (x1, y1), (x2, y2), get_colot(has_helmet), 2)
             cv2.putText(image, f"{label} {conf:.2f}", (x1, y2 + 20),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 255), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, get_colot(has_helmet), 2)
     
     return image
+
+def get_colot(has_helmet):
+    if has_helmet:
+        return (0,255,0)
+    return (0,0,255)
