@@ -39,6 +39,7 @@ cd helmet-detection
 
 
 📦 Installing Dependencies
+- I recommend that you use a virtual environment to install the dependencies
 ```
 pip install -r requirements.txt
 ```
