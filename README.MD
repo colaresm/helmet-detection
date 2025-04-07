@@ -1,12 +1,19 @@
-# Helmet detection 🪖 🚴  🏍️ 
+# Helmet Detection 🪖 🚴  🏍️ 
 The use of helmets by cyclists and motorcyclists is essential for road safety, especially in accident situations. Studies show that helmets can significantly reduce the risk of head trauma and serious head injuries, which are common in collisions and falls. By protecting one of the most vulnerable areas of the body, the helmet acts as a crucial barrier between the impact and the brain, potentially making the difference between minor injuries and fatal consequences. Therefore, its use should not be seen merely as a recommendation, but as an indispensable safety measure. 
 
 With this in mind, I developed this project with the goal of detecting helmet use among cyclists and motorcyclists. The project involves training a Deep Learning model using YOLO, capable of identifying through video whether a motorcyclist or cyclist is wearing a helmet or not.
+
+# Base YOLO Model
+The idea of this project is to detect cyclists or motorcyclists who are wearing or not wearing helmets. However, due to the absence of a specific dataset for this task, the detection process was divided into two parts.
+
+Initially, YOLOv8n is used to detect people (to differentiate a bicycle from a cyclist, for example), bicycles, and motorcycles. Then, using the detection of helmet presence in the next step, the desired detection is achieved by intersecting the results from both detections.
 
 # Fine-Tuning YOLO 
 Training YOLOv8n is quite straightforward, as the API is transparent. However, it still requires a dataset specifically focused on helmet detection.
 
 ![helmets](media/BikesHelmets41.png)
+![helmets](media/BikesHelmets128.png)
+
 
 In this project, I used the [Helmet Detection dataset](https://www.kaggle.com/datasets/andrewmvd/helmet-detection) available on Kaggle. Although it doesn't fully match my objective — as it includes various types of helmets, including those worn by motorcyclists
 
@@ -35,6 +42,7 @@ cd helmet-detection
 pip install -r requirements.txt
 ```
 ## Training
+- Taking the training is an optional step, you can skip to the testing step if you wish. 😁
 - This project already includes a `yolov8n.pt` file inside the `models` folder, which contains the base YOLO model used for training.  
 - Before starting the training, you must save the `annotations` and `images` inside the `data` folder.  
 - To run the training, simply use the following command:
