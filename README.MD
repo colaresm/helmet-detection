@@ -89,7 +89,7 @@ python test.py  video path_your_video
 ```
 
 <p align="center">
-  <img src="media/animation.gif" width="800" height="400" style="object-fit: 
+  <img src="media/animation.gif" width="800" height="400"></img> 
 </p>
 
 ## Contributing
